@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Universitario</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f8f8;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #00274c;
+            color: #ffffff;
+            border-bottom: 2px solid #ffffff; /* Línea de separación */
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2em;
+            letter-spacing: 2px;
+        }
+
+        #chat-container {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80vh; /* Ajuste la altura según sea necesario */
+        }
+
+        #chat-box {
+            border: none;
+            width: 80%;
+            height: 100%;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        #watermark {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            opacity: 0.1; /* Puedes ajustar la opacidad según tus preferencias */
+            width: 150px; /* Ajusta el tamaño de la marca de agua */
+            height: auto;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #00274c;
+            color: #ffffff;
+            border-top: 2px solid #ffffff; /* Línea de separación */
+        }
+
+        p {
+            margin: 0;
+            font-size: 0.8em;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Chat Universitario</h1>
+        <!-- Puedes reemplazar la siguiente URL de la imagen con la imagen del logotipo de tu universidad -->
+    </header>
+
+    <div id="chat-container">
+        <iframe src="https://web.powerva.microsoft.com/environments/Default-6eeb49aa-436d-43e6-becd-bbdf79e5077d/bots/cr70a_baymax/webchat?__version__=2" frameborder="50" style="width: 100%; height: 100%; border-radius: 10px; overflow: hidden;"></iframe>
+        <img id="watermark" src="https://www.utpl.edu.ec/sites/default/files/imagenes/escudo.png" alt="Marca de Agua">
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Universidad Tecnica Particular de Loja. Todos los derechos reservados.</p>
+        <!-- Puedes reemplazar la siguiente URL de la imagen con la imagen del footer de tu universidad -->
+    </footer>
+</body>
+
+</html>
